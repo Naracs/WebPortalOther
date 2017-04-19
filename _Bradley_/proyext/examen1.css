@@ -1,0 +1,281 @@
+/*____________________________*/
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    background-color: black;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*____________________________*/
+*{
+  font-family: serif;
+}
+
+body{
+  padding:0;
+  margin:0;
+}
+
+a #title{
+  color: blue;
+}
+
+p {
+  text-align: center;
+  text-shadow:;
+  text-overflow: ellipsis;
+}
+
+
+.row, [class*="col-"]{
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0px;
+  width:100%;
+  padding:0 0em 0 0em;
+  /*border:0.1px gold solid;*/
+
+  clear:both;
+}
+
+.row{
+  overflow: auto;
+  clear: both;
+  background-color: #999;
+}
+
+[class*="col-s"]{
+  clear: none;
+  float:left;
+}
+
+.col-s-1{width:33.33%;}
+.col-s-2{width:66.66%;}
+.col-s-3{width:100%;}
+.col-s-h{width:50%;}
+
+@media (min-width:480px) {
+  .row{
+    background-color: rgb(255, 255, 255);
+  }
+
+
+
+  div #top{
+      width: 100%;
+      height: 400px;
+      background-image: url('5.jpg');
+      background-size: 100% 100%;
+
+  }
+
+  div #bottomL{
+      width: 100%;
+      height: 400px;
+      background-image: url('2.jpg');
+      background-size: 100% 100%;
+
+  }
+
+  div #bottomC{
+      width: 100%;
+      height: 400px;
+      background-image: url('3.jpg');
+      background-size: 100% 100%;
+
+  }
+
+  div #bottomR{
+      width: 100%;
+      height: 400px;
+      background-image: url('4.jpg');
+      background-size: 100% 100%;
+
+  }
+
+  nav ul li a {
+      color: white;
+    }
+
+
+}
+
+@media (min-width:768px) {
+  .row{
+    background-color: rgb(255, 255, 255);
+  }
+
+  [class*="col-"]{
+    clear: none;
+  }
+  .col-1{width: 8.33%;/*100/12*/}
+  .col-2{width: 16.67%;}
+  .col-3{width:  25%;}
+  .col-4{width: 33.33%;}
+  .col-5{width: 41.67%;}
+  .col-6{width: 50%;}
+  .col-7{width: 58.33%;}
+  .col-8{width: 66.67%;}
+  .col-9{width: 75%;}
+  .col-10{width: 83.33%;}
+  .col-11{width: 91.67%;}
+  .col-12{width: 100%;}
+  [class*="col-"]{
+    float:left;
+    padding: 0.5em;
+  }
+
+  div #top{
+      width: 100%;
+      height: 400px;
+      background-image: url('6.jpg');
+      background-size: 100% 100%;
+
+  }
+
+  div #bottomL{
+      width: 50%;
+      height: 400px;
+      background-image: url('2.jpg');
+      background-size: 100% 100%;
+
+  }
+
+  div #bottomC{
+      width: 50%;
+      height: 400px;
+      background-image: url('3.jpg');
+      background-size: 100% 100%;
+
+  }
+
+  div #bottomR{
+      width: 100%;
+      height: 400px;
+      background-image: url('4.jpg');
+      background-size: 100% 100%;
+
+  }
+
+
+}
+@media (min-width:1024px) {
+  .row{
+    background-color: rgb(255, 255, 255);
+  }
+
+  [class*="col-g"]{
+    clear: none;
+    float:left;
+    padding: 0em;
+
+  }
+
+  .col-g-1{width:33.33%;}
+  .col-g-2{width:66.66%;}
+  .col-g-3{width:100%;}
+  .col-g-h{width:50%;}
+  .col-g-mid{width:60%;}
+  .col-g-sid{width:20%;}
+
+
+
+  div #top{
+      width: 100%;
+      height: 400px;
+      background-image: url('1.jpg');
+      background-size: 100% 100%;
+
+  }
+
+  div #bottomL{
+      width: 33.33%;
+      height: 400px;
+      background-image: url('2.jpg');
+      background-size: 100% 100%;
+
+  }
+
+  div #bottomC{
+      width: 33.33%;
+      height: 400px;
+      background-image: url('3.jpg');
+      background-size: 100% 100%;
+
+  }
+
+  div #bottomR{
+      width: 33.33%;
+      height: 400px;
+      background-image: url('4.jpg');
+      background-size: 100% 100%;
+
+  }
+
+
+}
+@media (min-width:2300px) {
+  .row{
+    background-color: rgb(255, 255, 255);
+  }
+
+}
+/*----------------------------------------------------------------------------*/
+header{
+  position:relative;
+  margin:0px;
+  padding:0px;
+  min-height: 0px;
+  background-color: #999;
+}
+
+nav{
+  /*position:fixed;*/
+  top:0px;
+  background-color:black;
+  padding:0px;
+  width:100%;
+}
+nav ul{
+  padding:0px;
+  margin:0px;
+  display: inline-block;
+
+}
+nav ul.right{
+  position: absolute;
+  right:0px;
+  top:0px;
+  font-weight: bold;
+}
+nav ul li{
+  display: inline;
+}
+nav ul li a{
+  display: inline-block;
+  padding: 1em 1.5em;
+  margin:0px;
+  color:grey;
+  text-decoration: none;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -ms-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+nav ul li a:hover{
+  background-color:gold;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -ms-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
